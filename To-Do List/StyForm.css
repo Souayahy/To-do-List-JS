@@ -1,0 +1,160 @@
+body {
+    background-image: url(back1.gif);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(Fonts/Bebas.otf)
+}
+
+@font-face {
+    font-family: Gameplay;
+    src: url(Fonts/Gameplay.ttf);
+}
+
+a {
+    -webkit-text-stroke-width: 1.5px;
+}
+
+.Rest {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#task {
+    width: 300px;
+    height: 20px;
+    margin-top: 10px;
+}
+.sub {
+    height: 25px;
+    width: 55px;
+    margin-top: 30px;
+}
+.Cat {
+    margin-top: 30px;
+}
+
+.firstL1 {
+    -webkit-text-stroke-width: 1px;
+}
+
+.firstL {
+    -webkit-text-stroke-width: 1px;
+}
+
+.HomeM {
+    -webkit-text-stroke-width: 1px;
+}
+
+.Entertainment {
+    -webkit-text-stroke-width: 1px;
+}
+
+.Work {
+    -webkit-text-stroke-width: 1px;
+}
+
+#firstL {
+    -webkit-text-stroke-width: 1px;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    font-family: Bebas;
+    padding: 8px 8px 8px 8px;
+    width: 300px;
+    margin: auto;
+    list-style-type: none;
+    background: whitesmoke;
+    font-size: 15px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.close {
+    position: absolute;
+    padding: 7px 15px;
+    right: 0;
+    top: 0;
+}
+
+.close:hover {
+    background-color: red;
+}
+
+.addBtn:hover {
+    background-color: cornflowerblue;
+    color: white;
+  }
+
+input {
+    font-family: Bebas;
+  }
+
+.addBtn {
+    padding: 3.5px;
+    width: 60%;
+    background: #d9d9d9;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+
+select {
+    border-radius: 10px;
+    font-family: Bebas;
+    text-align: center;
+    margin-top: 15px;
+}
+
+input:hover {
+    background-color:cornflowerblue;
+    color:white;
+}
+
+select:hover {
+    background-color:cornflowerblue;
+    color:white;
+}
+
+
+ul li:nth-child(odd) {
+   background: #cdcfff;
+}
+
+ul li:hover {
+    background: rgb(255, 130, 130);
+    color: white;
+  }
+  
+ul li.checked {
+    background: white;
+    color: green;
+    text-decoration: line-through;
+}
+
+ul li.checked:before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }

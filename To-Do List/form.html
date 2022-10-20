@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyForm.css">
+    <script src="dydotest.js"></script>
+    <title>To-Do List</title>
+</head>
+<body style="font-family: Gameplay;">
+    <div class="Exit">
+        <a href="Do.html" style="color: white; text-decoration: none; text-align: start; font-size: 40px; -webkit-text-stroke-color: black;">Exit</a>
+    </div>
+    <div class="Rest" style="font-family: Bebas;">
+        <form> 
+        <label id="firstL" for="task" style="color: White; font-size: 40px; -webkit-text-stroke-color: black;">Submit a task to do</label><br>   
+        <input id="task" type="text" style="text-align: center;" placeholder="Task ..."><br>
+        <div class="Cat" id="ensemble">   
+            <label class="firstL1" for="select" style="color:white; -webkit-text-stroke-color: black; font-size: 40px;">Choose a Category</label><br>
+            <select name="categories" id="select">
+                <option value="" style="background-color:cornflowerblue; color:white; ">--Choose an option--</option>
+                <option value="Studies">Studies</option>
+                <option value="HomeMaintenance">Home Maintenance</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Work">Work</option>
+            </select>
+            <span onclick="newElement()" class="addBtn">Submit</span>
+            <input type="reset" id="reset" style="position:relative; margin-left: 20px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; border-radius: 10px;" placeholder="Reset"></input>
+    
+        </div>  
+        </form>
+    </div>
+
+    <div style="margin-top: 30px;">   
+        <div>
+            <ul id="StudiesL">
+                <li style="background-color: cornflowerblue; text-align:center; color:white">Studies</li>
+            </ul>
+        </div>
+        <div>    
+            <ul id="HomeMain">
+                <li style="background-color: cornflowerblue; text-align:center; color:white">Home Maintenance</li>
+            </ul>
+        </div>
+        <div>    
+            <ul id="Enter">
+                <li style="background-color: cornflowerblue; text-align:center; color:white">Entertainment</li>
+            </ul>  
+        </div>    
+        <div>
+            <ul id="Wor">
+                <li style="background-color: cornflowerblue; text-align:center; color:white">Work</li>
+            </ul>
+        </div>
+        
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+div {
+    text-align: center;
+    margin-top: 6em;
+    font-family: "Bebas";
+    -webkit-text-stroke-width: 2px;
+    font-size: 50px;
+}
+
+#scnd {
+    text-align: start;
+    margin-top: 0px;
+}
+
+div:hover {
+    font-size: 55px;
+} 
+
+@font-face {
+    font-family: "Bebas";
+    src: url(Fonts/Bebas.otf);
+    font-family: "Gameplay";
+    src: url(Fonts/Gameplay.ttf);
+
+}
+
+body {
+    background-image: url(back1.gif);
+}
+
+form {
+    font-family: "Bebas";
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-top: 85px;
+}
+
+#firstL {
+    font-family: "Bebas";
+}
+
+#task {
+    height: 20px;
+}
+
