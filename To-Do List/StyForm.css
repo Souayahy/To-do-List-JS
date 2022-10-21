@@ -1,6 +1,6 @@
 body {
     background-image: url(back1.gif);
-    -webkit-user-select: none;
+    -webkit-user-select: none;          /* Background et rend tout élément du body non sélectionnable */
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -8,21 +8,21 @@ body {
 
 @font-face {
     font-family: Bebas;
-    src: url(Fonts/Bebas.otf)
+    src: url(Fonts/Bebas.otf) /* importation de bebas */
 }
 
 @font-face {
     font-family: Gameplay;
-    src: url(Fonts/Gameplay.ttf);
+    src: url(Fonts/Gameplay.ttf); /* importation de gameplay */
 }
 
 a {
-    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-width: 1.5px; /* contour de texte */
 }
 
 .Rest {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 20px; 
 }
 
 #task {
@@ -64,13 +64,13 @@ a {
 }
 
 ul li {
-    cursor: pointer;
+    cursor: pointer; /* change la forme du curseur */
     position: relative;
     font-family: Bebas;
     padding: 8px 8px 8px 8px;
     width: 300px;
     margin: auto;
-    list-style-type: none;
+    list-style-type: none; /* pas de curseur */
     background: whitesmoke;
     font-size: 15px;
     transition: 0.2s;
@@ -88,11 +88,11 @@ ul li {
 }
 
 .close:hover {
-    background-color: red;
+    background-color: red; /* changement de couleur du backg quand on passe la souris dessus */
 }
 
 .addBtn:hover {
-    background-color: cornflowerblue;
+    background-color: cornflowerblue; /* changement de couleur du backg et du texte quand on passe la souris dessus */
     color: white;
   }
 
@@ -108,7 +108,6 @@ input {
     text-align: center;
     font-size: 13px;
     cursor: pointer;
-    transition: 0.3s;
     border-radius: 10px;
     margin-left: 20px;
   }
@@ -138,23 +137,4 @@ ul li:nth-child(odd) {
 ul li:hover {
     background: rgb(255, 130, 130);
     color: white;
-  }
-  
-ul li.checked {
-    background: white;
-    color: green;
-    text-decoration: line-through;
-}
-
-ul li.checked:before {
-    content: '';
-    position: absolute;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
   }

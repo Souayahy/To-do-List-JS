@@ -5,12 +5,12 @@ function newElement() {
     var t = document.createTextNode(inputValue);
 
     li.appendChild(t);
-    if (inputValue === '') {
+    if (inputValue === '') { //si rien n'est saisi dans la barre de texte, on aura un message d'alerte
       alert("You Dumb Bitch !");
     } 
 
     if (Cate==='') {
-      alert("You Dumb Bitch !")
+      alert("You Dumb Bitch !") //si aucune catégorie n'est choisi, on aura un message d'alerte
     }
 
     if (Cate==='Studies') {
@@ -19,7 +19,7 @@ function newElement() {
 
     if (Cate==='HomeMaintenance') {
       document.getElementById('HomeMain').appendChild(li)
-    }
+    }                                                                           // 4 boucles qui permettent de distinguer la catégorie de la tâche saisie
 
     if (Cate==='Entertainment') {
       document.getElementById("Enter").appendChild(li);
@@ -29,11 +29,11 @@ function newElement() {
       document.getElementById("Wor").appendChild(li);
     }
 
-    document.getElementById("task").value = "";
+    document.getElementById("task").value = ""; // Reset la barre de texte
   
     var span = document.createElement("SPAN");
     var txt = document.createTextNode("\u00D7");
-    span.className = "close";
+    span.className = "close";                         // Permet de coller le X à chaque élément de la liste
     span.appendChild(txt);
     li.appendChild(span);
   
@@ -53,7 +53,7 @@ for (i = 0; i < myNodelist.length; i++) {
   span.className = "close";
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
-}
+}                                                                         // Rendent le X fonctionnel qui servira d'outil pour supprimer des tâches
 
 var close = document.getElementsByClassName("close");
 var i;

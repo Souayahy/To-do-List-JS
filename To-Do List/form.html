@@ -9,24 +9,24 @@
     <title>To-Do List</title>
 </head>
 <body style="font-family: Gameplay;">
-    <div class="Exit">
-        <a href="Do.html" style="color: white; text-decoration: none; text-align: start; font-size: 40px; -webkit-text-stroke-color: black;">Exit</a>
-    </div>
+    <div class="Exit"> <!-- Permet de retourner à la page d'accueil-->
+        <a href="Do.html" style="color: white; text-decoration: none; text-align: start; font-size: 40px; -webkit-text-stroke-color: black;">Exit</a> 
+    </div> 
     <div class="Rest" style="font-family: Bebas;">
         <form> 
-        <label id="firstL" for="task" style="color: White; font-size: 40px; -webkit-text-stroke-color: black;">Submit a task to do</label><br>   
-        <input id="task" type="text" style="text-align: center;" placeholder="Task ..."><br>
+        <label id="firstL" for="task" style="color: White; font-size: 40px; -webkit-text-stroke-color: black;">Submit a task to do</label><br> <!-- Texte au dessus de la barre de texte-->
+        <input id="task" type="text" style="text-align: center;" placeholder="Task ..."><br> <!-- Barre de texte -->
         <div class="Cat" id="ensemble">   
-            <label class="firstL1" for="select" style="color:white; -webkit-text-stroke-color: black; font-size: 40px;">Choose a Category</label><br>
+            <label class="firstL1" for="select" style="color:white; -webkit-text-stroke-color: black; font-size: 40px;">Choose a Category</label><br> <!-- Texte au dessus de la sélection  -->
             <select name="categories" id="select">
                 <option value="" style="background-color:cornflowerblue; color:white; ">--Choose an option--</option>
                 <option value="Studies">Studies</option>
-                <option value="HomeMaintenance">Home Maintenance</option>
+                <option value="HomeMaintenance">Home Maintenance</option>       <!-- Barre de sélection-->
                 <option value="Entertainment">Entertainment</option>
                 <option value="Work">Work</option>
             </select>
-            <span onclick="newElement()" class="addBtn">Submit</span>
-            <input type="reset" id="reset" style="position:relative; margin-left: 20px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; border-radius: 10px;" placeholder="Reset"></input>
+            <span onclick="newElement()" class="addBtn">Submit</span> <!--fait appel à la fonctionn permettant d'ajouter la tâche saisie-->
+            <input type="reset" id="reset" style="position:relative; margin-left: 20px; font-family:Bebas; border-radius: 10px;" Value="Reset"></input> <!-- Permet de reset la catégorie choisie-->
     
         </div>  
         </form>
@@ -35,22 +35,22 @@
     <div style="margin-top: 30px;">   
         <div>
             <ul id="StudiesL">
-                <li style="background-color: cornflowerblue; text-align:center; color:white">Studies</li>
+                <li style="background-color: cornflowerblue; text-align:center; color:white">Studies</li> <!-- Liste catégorie studies-->
             </ul>
         </div>
         <div>    
             <ul id="HomeMain">
-                <li style="background-color: cornflowerblue; text-align:center; color:white">Home Maintenance</li>
+                <li style="background-color: cornflowerblue; text-align:center; color:white">Home Maintenance</li> <!-- Liste catégorie Home Maintenance-->
             </ul>
         </div>
         <div>    
             <ul id="Enter">
-                <li style="background-color: cornflowerblue; text-align:center; color:white">Entertainment</li>
+                <li style="background-color: cornflowerblue; text-align:center; color:white">Entertainment</li> <!-- Liste catégorie Entertainment-->
             </ul>  
         </div>    
         <div>
             <ul id="Wor">
-                <li style="background-color: cornflowerblue; text-align:center; color:white">Work</li>
+                <li style="background-color: cornflowerblue; text-align:center; color:white">Work</li> <!-- Liste catégorie Work-->
             </ul>
         </div>
         
